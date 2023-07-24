@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import { backgroundColor, color } from "./constant";
 import "./Result.css";
 
-const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=mydestiny-male";
+const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=202307_fate_male";
 const data = [
   {
     title: "하쿠",
@@ -201,7 +201,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href={`https://kinolights.com/?${utm}`} // FIXME
+            href={`https://kinolights.com/community/post/kVV3hYkBlTLepY8dQ8GC?${utm}`} // FIXME
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
@@ -215,7 +215,7 @@ const Result = () => {
             sx={{ backgroundColor: "rgba(37, 48, 74, 0.2)" }}
             onClick={() =>
               navigator.clipboard
-                .writeText(`https://2022christmas.kinolights.com/result/${id}`)
+                .writeText(`https://mbti-fate-male.kinolights.com/result/${id}`)
                 .then(() => alert("주소가 복사되었습니다.\n원하는 곳에 붙여넣기 해주세요."))
             }
           >
