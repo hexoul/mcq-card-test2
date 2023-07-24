@@ -191,7 +191,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href={`https://kinolights.com/?${utm}`} // FIXME
+            href={`https://kinolights.com/community/post/kVV3hYkBlTLepY8dQ8GC?${utm}`} // FIXME
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
@@ -201,7 +201,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href={`https://kinolights.com/community/post/kVV3hYkBlTLepY8dQ8GC?${utm}`} // FIXME
+            href="https://mbti-fate-female.kinolights.com"
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
