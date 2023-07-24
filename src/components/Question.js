@@ -138,14 +138,22 @@ const Question = () => {
     if (mbtiCount.j > mbtiCount.p) j = true;
     else p = true;
 
-    if (e && f && j) navigate("/result/0");
-    else if (i && t && j) navigate("/result/1");
-    else if (e && t && j) navigate("/result/2");
-    else if (e && f && p) navigate("/result/3");
-    else if (i && f && p) navigate("/result/4");
-    else if (i && t && p) navigate("/result/5");
-    else if (i && f && j) navigate("/result/6");
-    else if (e && t && p) navigate("/result/7");
+    if (e && n && f && j) navigate("/result/0");
+    else if (e && n && t && p) navigate("/result/1");
+    else if (e && n && f && p) navigate("/result/2");
+    else if (e && n && t && j) navigate("/result/3");
+    else if (e && s && f && p) navigate("/result/4");
+    else if (e && s && f && j) navigate("/result/5");
+    else if (e && s && t && p) navigate("/result/6");
+    else if (e && s && t && j) navigate("/result/7");
+    else if (i && n && f && p) navigate("/result/8");
+    else if (i && n && f && j) navigate("/result/9");
+    else if (i && n && t && p) navigate("/result/10");
+    else if (i && n && t && j) navigate("/result/11");
+    else if (i && s && f && p) navigate("/result/12");
+    else if (i && s && f && j) navigate("/result/13");
+    else if (i && s && t && p) navigate("/result/14");
+    else if (i && s && t && j) navigate("/result/15");
   }, [activeStep, mbtiCount, done, navigate]);
 
   const firstChoiceHandler = useCallback(() => {
