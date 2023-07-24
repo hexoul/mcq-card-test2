@@ -18,21 +18,18 @@ const Home = () => {
         className="Home-LogoImage"
         alt="logo"
       />
-      <div className="Home-Title">나와 잘 맞는 크리스마스 영화는?🎄</div>
-      <div className="Home-Subtitle">
-        크리스마스에 볼 영화, 아직도 못 골랐다면<br />
-        나에게 딱! 맞는 크리스마스 영화를 찾아보자!
-      </div>
+      <div className="Home-Title">당신의 찰떡궁합 운명의 상대는?</div>
+      <div className="Home-Subtitle">영화/드라마 캐릭터 남자 편</div>
       <img
-        src="https://static.kinolights.com/mbti/2022-christmas/start-image.jpg"
+        src="https://static.kinolights.com/mbti/202307-fate/male-start.png"
         className="Home-StartImage"
         alt="start"
       />
       <IconButton
         className="Home-StartButton"
         sx={{
-          color: "black",
-          backgroundColor: "white",
+          color: "white",
+          backgroundColor: "rgb(37, 48, 74)",
           borderRadius: "10px",
           fontSize: "large",
           fontFamily: "GangwonEdu_OTFBoldA",
