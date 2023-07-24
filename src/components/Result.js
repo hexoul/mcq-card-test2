@@ -9,8 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import { backgroundColor, color } from "./constant";
 import "./Result.css";
 
-const utm =
-  "utm_source=kinolights&utm_medium=mbti&utm_campaign=mydestiny-female";
+const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=mydestiny-male";
 const data = [
   {
     title: "하쿠",
@@ -91,37 +90,24 @@ const data = [
       "💔 당신과 맞지 않는 캐릭터: 브루스 배너\n당신과 비슷한 민감도를 가진 인물과는 매일이 살얼음판일 거예요.",
   },
   {
-    title: "패트릭 버로나",
-    description: `<b>"내 관심은 바로 너야"</b>\n\n\n성실한 당신은 당신을 존중해줄 수 있는 헌신적인 사람을 원하는군요!\n<a href="https://kinolights.com/title/36671?${utm}">&lt;내가 널 사랑할 수 없는 10가지 이유&gt;</a> 속 패트릭이 잘 맞을 것으로 보여요.\n\n\n  거칠어 보이는 첫인상과는 다르게 진중하고 유쾌한 성격의 소유자인 패트릭은\n당신이 속마음을 공유할 수 있는 믿을만한 연인이 되어줄 거예요.\n당신에게 주도권을 주면서도 관계에서 절대 순종적이지만은 않은 모습으로\n상황을 더욱 재미있게 만들 수 있는 매력을 가진 인물이죠.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당돌한 당신의 부족한 부분을 채워줄 패트릭은 분명 당신이 꿈꾸는 이상적인 파트너일 거예요!`,
+    title: "피터",
+    description: `<b>"야쿠르트 먹을래?"</b>\n\n\n신중하고 배려심이 많은 당신은 적극적으로 표현해주는 사람을 원하는군요!\n<a href="https://kinolights.com/title/68339?${utm}">&lt;내가 사랑했던 모든 남자들에게&gt;</a> 속 피터와 잘 맞을 것으로 보여요.\n\n\n학교에서 가장 인기가 많은 피터는 모든 사람들과 잘 어울리는 성격이에요.\n좋아하는 상대에게 마음을 적극적으로 표현하고,\n유쾌하면서도 예의 바른 피터는 조심스러운 당신의 마음을 사로잡고 깊은 관계로 발전시킬 거예요.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n조심스러운 당신의 마음을 허물 피터는 분명 당신이 꿈꾸는 이상적인 파트너일 거예요!`,
     description2:
-      "💔 당신과 맞지 않는 캐릭터: 닥터 스트레인지\n당신을 통제하려는 연인과의 연애는 당신을 힘들게 할 거예요.",
+      "💔 당신과 맞지 않는 캐릭터: 셜록 홈즈\n지적인 사고로 날카롭게 반응하는 상대는 당신에게 무례하다고 느껴질 거예요.",
   },
   {
-    title: "패트릭 버로나",
-    description: `<b>"내 관심은 바로 너야"</b>\n\n\n성실한 당신은 당신을 존중해줄 수 있는 헌신적인 사람을 원하는군요!\n<a href="https://kinolights.com/title/36671?${utm}">&lt;내가 널 사랑할 수 없는 10가지 이유&gt;</a> 속 패트릭이 잘 맞을 것으로 보여요.\n\n\n  거칠어 보이는 첫인상과는 다르게 진중하고 유쾌한 성격의 소유자인 패트릭은\n당신이 속마음을 공유할 수 있는 믿을만한 연인이 되어줄 거예요.\n당신에게 주도권을 주면서도 관계에서 절대 순종적이지만은 않은 모습으로\n상황을 더욱 재미있게 만들 수 있는 매력을 가진 인물이죠.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당돌한 당신의 부족한 부분을 채워줄 패트릭은 분명 당신이 꿈꾸는 이상적인 파트너일 거예요!`,
+    title: "앤소니 브리저튼",
+    description: `<b>"그댄 내 존재에 퍼지는 독이오. 내 모든 욕구의 대상이지."</b>\n\n\n고양이 같은 당신은 어른스러운 매력의 사람을 원하는군요!\n<a href="https://kinolights.com/title/103814?${utm}">&lt;브리저튼&gt;</a> 속 앤소니 브리저튼과 잘 맞을 것으로 보여요.\n\n\n앤소니 브리저튼은 이성적이지만 사랑에 있어서는 저돌적인 인물이에요.\n책임감이 강한 면모가 있어 안정감을 느끼게 하면서도,\n새롭고 짜릿한 연애로 당신의 모든 감각을 자극해줄 거예요.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n앤소니 브리저튼은 예민한 당신의 취향을 충족시킬 이상적인 파트너일 거예요!`,
     description2:
-      "💔 당신과 맞지 않는 캐릭터: 닥터 스트레인지\n당신을 통제하려는 연인과의 연애는 당신을 힘들게 할 거예요.",
+      "💔 당신과 맞지 않는 캐릭터: 코넬\n고민이 많은 스타일의 연인은 당신과 맞지 않을 거예요.",
   },
   {
-    title: "패트릭 버로나",
-    description: `<b>"내 관심은 바로 너야"</b>\n\n\n성실한 당신은 당신을 존중해줄 수 있는 헌신적인 사람을 원하는군요!\n<a href="https://kinolights.com/title/36671?${utm}">&lt;내가 널 사랑할 수 없는 10가지 이유&gt;</a> 속 패트릭이 잘 맞을 것으로 보여요.\n\n\n  거칠어 보이는 첫인상과는 다르게 진중하고 유쾌한 성격의 소유자인 패트릭은\n당신이 속마음을 공유할 수 있는 믿을만한 연인이 되어줄 거예요.\n당신에게 주도권을 주면서도 관계에서 절대 순종적이지만은 않은 모습으로\n상황을 더욱 재미있게 만들 수 있는 매력을 가진 인물이죠.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당돌한 당신의 부족한 부분을 채워줄 패트릭은 분명 당신이 꿈꾸는 이상적인 파트너일 거예요!`,
+    title: "토르",
+    description: `<b>"마지막 순간은 당신 곁에 있고 싶어"</b>\n\n\n감정 표현이 서툰 당신은 당신과 반대의 매력을 가진 유쾌한 사람을 원하는군요!\n<a href="https://kinolights.com/title/44421?${utm}">&lt;토르&gt;</a> 속 토르가 잘 맞을 것으로 보여요.\n\n\n무뚝뚝해보이는 첫인상과 다르게 재치있는 성격을 가진 토르는 당신의 호기심을 끌기에 충분해요.\n당신의 직설적인 화법을 상처받지 않고 이해해줄 수 있는 당당하고 유쾌한 애인이 되어줄 거예요.\n말보다 행동으로 표현하는 둘의 연애는 시원시원하고 재미있는 관계가 될 것 같네요.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n로봇 같은 당신에게 활력을 불어넣어줄 토르는 분명 당신이 꿈꾸는 이상적인 파트너일 거예요!`,
     description2:
-      "💔 당신과 맞지 않는 캐릭터: 닥터 스트레인지\n당신을 통제하려는 연인과의 연애는 당신을 힘들게 할 거예요.",
+      "💔 당신과 맞지 않는 캐릭터: 하쿠\n감성적인 고민이 많은 연인과의 연애는 당신을 답답하게 할 거예요.",
   },
 ];
-
-const emphasisButtonStyle = {
-  color,
-  backgroundColor: "rgb(193, 46, 46)",
-  marginTop: "2rem",
-  borderRadius: "10px",
-  lineHeight: "1.1rem",
-  fontSize: "large",
-  fontFamily: "GangwonEdu_OTFBoldA",
-  boxShadow: "rgba(255, 255, 255, 0.34) 0px 5px 20px",
-  "&:focus": { color, backgroundColor: "rgb(193, 46, 46)" },
-  "&:hover": { color, backgroundColor: "rgb(193, 46, 46)" },
-};
 
 const buttonStyle = {
   color,
@@ -134,6 +120,13 @@ const buttonStyle = {
   boxShadow: "rgba(255, 255, 255, 0.34) 0px 5px 20px",
   "&:focus": { color, backgroundColor },
   "&:hover": { color, backgroundColor },
+};
+
+const emphasisButtonStyle = {
+  ...buttonStyle,
+  backgroundColor: "rgb(193, 46, 46)",
+  "&:focus": { color, backgroundColor: "rgb(193, 46, 46)" },
+  "&:hover": { color, backgroundColor: "rgb(193, 46, 46)" },
 };
 
 const Result = () => {
@@ -198,7 +191,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href="https://kinolights.com" // FIXME
+            href={`https://kinolights.com/?${utm}`} // FIXME
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
@@ -208,7 +201,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href="https://kinolights.com" // FIXME
+            href={`https://kinolights.com/?${utm}`} // FIXME
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
@@ -223,11 +216,7 @@ const Result = () => {
             onClick={() =>
               navigator.clipboard
                 .writeText(`https://2022christmas.kinolights.com/result/${id}`)
-                .then(() =>
-                  alert(
-                    "주소가 복사되었습니다.\n원하는 곳에 붙여넣기 해주세요."
-                  )
-                )
+                .then(() => alert("주소가 복사되었습니다.\n원하는 곳에 붙여넣기 해주세요."))
             }
           >
             <LinkIcon />
