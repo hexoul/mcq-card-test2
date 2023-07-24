@@ -6,9 +6,10 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 
+import { backgroundColor, color } from "./constant"
 import "./Result.css";
 
-const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=christmas2022";
+const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=202307_fate_male";
 const data = [
   {
     title: "배드 맘스 크리스마스",
@@ -61,16 +62,16 @@ const data = [
 ];
 
 const buttonStyle = {
-  color: "black",
-  backgroundColor: "white",
+  color,
+  backgroundColor,
   marginTop: "2rem",
   borderRadius: "10px",
   lineHeight: "1.1rem",
   fontSize: "large",
   fontFamily: "GangwonEdu_OTFBoldA",
   boxShadow: "rgba(255, 255, 255, 0.34) 0px 5px 20px",
-  "&:focus": { color: "black", backgroundColor: "white" },
-  "&:hover": { color: "black", backgroundColor: "white" },
+  "&:focus": { color, backgroundColor },
+  "&:hover": { color, backgroundColor },
 };
 
 const Result = () => {
@@ -119,7 +120,7 @@ const Result = () => {
           <IconButton
             color="inherit"
             component="label"
-            sx={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
+            sx={{ backgroundColor: "rgba(37, 48, 74, 0.2)" }}
             onClick={() =>
               navigator.clipboard
                 .writeText(`https://2022christmas.kinolights.com/result/${id}`)

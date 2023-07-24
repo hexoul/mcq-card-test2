@@ -3,90 +3,99 @@ import { useNavigate } from "react-router-dom";
 import MobileStepper from "@mui/material/MobileStepper";
 import Button from "@mui/material/Button";
 
+import { backgroundColor, color } from "./constant"
 import "./Question.css";
 
-const steps = 9;
+const steps = 12;
 const data = [
   {
+    question: "오늘은 연인과의 데이트 날!",
+    firstChoice: "데이트의 정석은 영화관!\n영화관으로 영화를 보러 간다",
+    secondChoice: "넷플릭스 앤 칠!\n집에서 편하게 넷플릭스를 켠다",
+  },
+  {
+    question: "우리 무슨 영화 볼까?",
+    firstChoice: "실패없는 선택을 위해 리뷰를 꼼꼼히 읽고 고른다",
+    secondChoice: "포스터만 보고 내용을 상상해서 고른다",
+  },
+  {
+    question: "아뿔싸! 연인과 보고 싶은 영화가 다르다면?",
+    firstChoice: "딱히 보고 싶진 않지만,\n연인이 보고 싶어 하니 같이 본다",
+    secondChoice: "왜 그 영화가 보고 싶어?\n이유를 다 듣고 영화를 선택한다",
+  },
+  {
     question:
-      "크리스마스 배경의 영화 촬영이 한창인 뉴욕,\n스쳐 지나가는 엑스트라로 출연해 달라고 하는데\n당신의 선택은?",
+      "고르고 고른 영화의 러닝타임이 너무 길다!\n다음 스케줄이 있는데 이걸 어쩐담...",
+    firstChoice: "다음 계획을 위해\n러닝타임이 짧은 영화를 다시 고른다",
+    secondChoice: "재미있어 보이니 그냥 본다",
+  },
+  {
+    question:
+      "영화가 생각보다 더 재밌었다!\n어랏, 그런데 연인은 재미없었다고 하네?",
+    firstChoice: "그럼 넌 어떤 영화가 보고 싶은데?\n다음엔 네가 골라",
+    secondChoice: "내가 열심히 고른건데 재미없다니...\n뚁땽해",
+  },
+  {
+    question: "영화를 다 본 연인과 나, 꽤나 출출한데...",
+    firstChoice: "일단 밖으로 나가서\n맛있어 보이는 식당을 찾아본다",
+    secondChoice: "초록창에 맛집을 검색한다",
+  },
+  {
+    question: "저녁을 먹으러 가는 길,\n우연히 친한 친구 커플을 만났다!",
+    firstChoice: "오, 안녕. 다음에 또 봐! 제 갈 길 간다",
+    secondChoice: "우리 저녁 먹으러 가는데 같이 갈래?",
+  },
+  {
+    question: "식당에 들어와 메뉴를 고르는데\n처음 들어보는 음식을 찾았다!",
     firstChoice:
-      "아니 어떻게 내 얼굴을 전 세계에 팔아?\n먼 발치에서 구경만 하기",
-    secondChoice: "뭐 어때 추억인데! 한 번 해보기",
+      "오랜만에 데이트인데 실패하기 싫어!\n이미 먹어본, 익숙한 음식을 주문한다",
+    secondChoice: "이름이 맛있어 보이는데?\n처음 들어보는 음식을 주문한다",
   },
   {
     question:
-      "친구들과의 크리스마스 파티가 예정되어 있던 당신,\n폭설로 오도가도 못하게 됐다면?",
-    firstChoice: "파티? 영통으로 하면 돼.\n영상 통화로 친구들과 파티!",
-    secondChoice: "올해는 가족들과 즐거운 크리스마스 보내기",
+      "주문을 하기 위해 점원을 부르는데\n점원이 내 목소리를 듣지 못한다!",
+    firstChoice: "다시 한 번 더 크게 부른다!",
+    secondChoice: "바쁜가? 가까이 올 때까지 기다린다",
   },
   {
     question:
-      "길거리에서 울던 아이가 나를 보더니\n울음을 멈추고 산타가 진짜 있냐고 묻는다.",
-    firstChoice:
-      '동심은 지켜줘야지!\n"당연하지! 산타 할아버지는 우는 아이한테 선물 안주니까 뚝!"',
-    secondChoice:
-      '아이의 귀에 대고 작게...\n"걱정마 울어도 돼. 사실 산타는 없거든"',
+      "음식이 나오지도 않았는데,\n갑자기 점원이 서비스로 음료수를 가져다준다!",
+    firstChoice: "사장님 생일인가?\n아니면 내가 마음에 드나? 이유를 궁금해한다",
+    secondChoice: "오, 개이득! 감사히 받는다",
   },
   {
-    question: "썸남 or 썸녀와 크리스마스에 만나기로 했는데,\n어디에서 만날까?",
-    firstChoice: "나의 취향을 보여줄 수 있는 아지트같은 장소",
-    secondChoice: "인스타 각! 트렌디함을 어필할 핫플로 직행",
-  },
-  {
-    question:
-      "이번 크리스마스에는 올 한 해 수고한 나에게\n선물을 해주고 싶다. 토닥토닥, 수고했어 내 자신!",
-    firstChoice:
-      "평소 가지고 싶었던 사랑스러운 곰인형이나 귀여운 소품 선물하기",
-    secondChoice:
-      "현금이 최고지! 내가 자유롭게 쓸 수 있는 현금을 나에게 허락한다!",
+    question: "식사를 하는 중에 연인이 최근에 힘들었던 일을 이야기한다",
+    firstChoice: "연인을 이해하기 위해\n당시의 상황에 대해 계속 질문한다",
+    secondChoice: "연인이 힘들면 나도 마음이 아파ㅠ\n바로 위로한다",
   },
   {
     question:
-      "바디 프로필을 예약한 당신!\n친구의 크리스마스 파티에 치킨, 피자 등등\n기름진 음식이 잔뜩! 이때 당신은?",
-    firstChoice: "이건 아니지 나 자신아.\n꾹 참고 식단 계속하기",
-    secondChoice: "에라 모르겠다! 하루는 괜찮아.\n침도 안 닦고 닭 봉 잡기",
-  },
-  {
-    question:
-      "크리스마스 기념으로 마트에 간 당신,\n장난감 코너에서 일하는 산타가 당신의 이상형이라면?",
-    firstChoice: "이런 기회는 흔치 않다! 번호 따기",
-    secondChoice: "일하는 사람한테 무슨...\n아쉽지만 지나가기",
-  },
-  {
-    question:
-      "크리스마스 이브 아침, 눈을 떴는데\n산타클로스가 루돌프를 잃어버렸다며\n자동차를 빌려달라고 한다.",
-    firstChoice: "산타클로스면 믿을 수 있지. 빌려주기",
-    secondChoice: "산타라지만 나랑은 초면아님?\n빌려줄 수 없다.",
-  },
-  {
-    question: "크리스마스 파티가 취소된 당신, 이제 어떡하지?",
-    firstChoice: "가까운 친구들에게 크리스마스를 같이 보내자며 연락 돌리기",
-    secondChoice: "어쩔 수 없지! 집에서 따뜻하게 특선 영화를 보며 유유자적하기",
+      "오늘 계획했던 데이트가 모두 끝났다!\n그런데 애인이 갑자기 코노에 가자고 하는데...",
+    firstChoice: "헐 너무 좋은데? 나도 사실 가고 싶었어!",
+    secondChoice: "해야할 집안일이 있기 때문에\n각자 집으로 돌아간다",
   },
 ];
 
 const stepperStyle = {
-  backgroundColor: "rgb(25, 69, 51)",
   "& .MuiMobileStepper-progress": {
-    backgroundColor: "rgba(255, 255, 255, 0.07)",
+    backgroundColor: "rgba(230, 230, 230, 1)",
     borderRadius: "10px",
     width: "100vmin",
     height: "20px",
   },
-  "& span.MuiLinearProgress-bar": { backgroundColor: "white" },
+  "& span.MuiLinearProgress-bar": { backgroundColor },
 };
 
 const choiceButtonStyle = {
-  color: "black",
-  backgroundColor: "white",
+  color,
+  backgroundColor,
   marginTop: "9vmin",
   borderRadius: "10px",
   lineHeight: "1.1rem",
   fontFamily: "GangwonEdu_OTFBoldA",
   boxShadow: "rgba(255, 255, 255, 0.34) 0px 5px 20px",
-  "&:focus": { color: "black", backgroundColor: "white" },
-  "&:hover": { color: "black", backgroundColor: "white" },
+  "&:focus": { color, backgroundColor },
+  "&:hover": { color, backgroundColor },
 };
 
 const Question = () => {
@@ -95,6 +104,8 @@ const Question = () => {
   const [mbtiCount, setMbtiCount] = useState({
     e: 0,
     i: 0,
+    s: 0,
+    n: 0,
     f: 0,
     t: 0,
     j: 0,
@@ -106,7 +117,7 @@ const Question = () => {
   const postprocess = useCallback(() => {
     if (done) {
       return;
-    } else if (activeStep < 8) {
+    } else if (activeStep < steps - 1) {
       setActiveStep(activeStep + 1);
       setMbtiCount(mbtiCount);
       return;
@@ -114,9 +125,12 @@ const Question = () => {
 
     setDone(true);
 
-    let e, i, f, t, j, p;
+    let e, i, s, n, f, t, j, p;
     if (mbtiCount.e > mbtiCount.i) e = true;
     else i = true;
+
+    if (mbtiCount.s > mbtiCount.n) s = true;
+    else n = true;
 
     if (mbtiCount.f > mbtiCount.t) f = true;
     else t = true;
@@ -139,16 +153,16 @@ const Question = () => {
 
     switch (activeStep) {
       case 0:
-        mbtiCount.i++;
+        mbtiCount.e++;
         break;
       case 1:
-        mbtiCount.j++;
+        mbtiCount.s++;
         break;
       case 2:
         mbtiCount.f++;
         break;
       case 3:
-        mbtiCount.e++;
+        mbtiCount.j++;
         break;
       case 4:
         mbtiCount.f++;
@@ -157,12 +171,21 @@ const Question = () => {
         mbtiCount.j++;
         break;
       case 6:
-        mbtiCount.f++;
-        break;
-      case 7:
         mbtiCount.e++;
         break;
+      case 7:
+        mbtiCount.s++;
+        break;
       case 8:
+        mbtiCount.e++;
+        break;
+      case 9:
+        mbtiCount.s++;
+        break;
+      case 10:
+        mbtiCount.f++;
+        break;
+      case 11:
         mbtiCount.j++;
         break;
       default:
@@ -177,16 +200,16 @@ const Question = () => {
 
     switch (activeStep) {
       case 0:
-        mbtiCount.e++;
+        mbtiCount.i++;
         break;
       case 1:
-        mbtiCount.p++;
+        mbtiCount.n++;
         break;
       case 2:
         mbtiCount.t++;
         break;
       case 3:
-        mbtiCount.i++;
+        mbtiCount.p++;
         break;
       case 4:
         mbtiCount.t++;
@@ -195,12 +218,21 @@ const Question = () => {
         mbtiCount.p++;
         break;
       case 6:
-        mbtiCount.t++;
-        break;
-      case 7:
         mbtiCount.i++;
         break;
+      case 7:
+        mbtiCount.n++;
+        break;
       case 8:
+        mbtiCount.i++;
+        break;
+      case 9:
+        mbtiCount.n++;
+        break;
+      case 10:
+        mbtiCount.t++;
+        break;
+      case 11:
         mbtiCount.p++;
         break;
       default:
@@ -222,7 +254,7 @@ const Question = () => {
         sx={stepperStyle}
       />
       <img
-        src={`https://static.kinolights.com/mbti/2022-christmas/q${activeStep + 1}.jpg`}
+        src={`https://static.kinolights.com/mbti/202307-fate/q${activeStep + 1}.jpg`}
         className="Question-Image"
         alt="start"
       />
