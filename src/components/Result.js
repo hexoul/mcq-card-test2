@@ -6,34 +6,35 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 
-import { backgroundColor, color } from "./constant"
+import { backgroundColor, color } from "./constant";
 import "./Result.css";
 
-const utm = "utm_source=kinolights&utm_medium=mbti&utm_campaign=202307_fate_male";
+const utm =
+  "utm_source=kinolights&utm_medium=mbti&utm_campaign=mydestiny-female";
 const data = [
   {
-    title: "배드 맘스 크리스마스",
-    link: `https://m.kinolights.com/title/63166?${utm}`,
-    description:
-      "누구보다 행복한 크리스마스를 위해 계획 중인 당신!\n\n\n모두가 즐거울 파티 준비를 마쳤는데, 갑자기 불청객이 찾아온다면 어떨까요? 😨 생각만해도 벌써 속상하다고요?\n\n\n여기, 갑자기 들이닥친 엄마를 피해 행복한 크리스마스를 보내려는 세 사람이 있습니다.\n\n\n<배드 맘스 크리스마스>와 함께 어쩐지 공감가는 이들의 이야기와 그들만의 색다른 크리스마스에 빠져들어 볼까요?",
+    title: "하쿠",
+    description: `<b>"겁내지 마. 나는 그대의 편이야."</b>\n\n\n사교적인 당신은 사려 깊고 진실된 연인을 원하는군요!\n<a href="https://kinolights.com/title/12318?${utm}">&lt;센과 치히로의 행방불명&gt;</a> 속 하쿠와 잘 맞을 것으로 보여요.\n\n\n하쿠는 곤경에 빠진 치히로를 도와주는 수수께끼의 인물인데요.\n그는 상대방의 이야기를 늘 따뜻한 시선으로 들어주고, 깊은 관계를 갖죠.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n서로를 구원하는 치히로와 하쿠의 관계는 분명 당신이 꿈꾸는 이상적인 연애일거예요!`,
+    description2:
+      "💔 당신과 맞지 않는 캐릭터: 욘두\n자기 주장이 너무 강한 인물과의 사랑은 상처만 남길 거예요",
   },
   {
-    title: "크리스마스 건너뛰기",
-    link: `https://m.kinolights.com/title/38833?${utm}`,
-    description:
-      "크리스마스는 크리스마스 다워야지! 크리스마스에 진심인 당신!\n\n\n하지만 굳이 시끌벅적 요란하게 보내지 않더라도 가족들과 따뜻하고 행복한 시간을 보내면 충분하다고 생각해요.\n\n\n거기에 매년 크리스마스에 지키던 전통(규칙)까지 있으면 더 완벽한 크리스마스라고 느껴질거예요. 그런 당신에게 딱 어울리는 영화는 <크리스마스 건너뛰기>!\n\n\n특별한 날 가족들과, 가까운 사람들과 따뜻한 마음을 나누는게 얼마나 중요한지 아는 당신에게 잘 어울리는 영화입니다. 💕",
+    title: "셜록 홈즈",
+    description: `<b>"불가능한 경우를 제외하고 남은 것은 아무리 이상하고 믿기지 않더라도 사실이기 마련이야."</b>\n\n\n독립적인 당신은 재미있고 지적인 연인을 원하는군요!\n<a href="https://kinolights.com/title/80230?${utm}">&lt;셜록 홈즈&gt;</a> 속 셜록 홈즈와 잘 맞을 것으로 보여요.\n\n\n셜록 홈즈는 통찰력과 괴짜적 성격이 매력적인 인물인데요.\n머리가 비상하고, 정말 가까운 인물들에게는 다정한 신사 같은 셜록 홈즈는\n늘 당신에게 재미있는 시선을 제안해줄 거예요.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당신을 끊임없이 자극할 셜록 홈즈와의 관계는 분명 당신이 꿈꾸는 이상적인 연애일거예요!`,
+    description2:
+      "💔 당신과 맞지 않는 캐릭터: 테드\n깊은 생각을 사치로 여기는 인물과의 사랑은 매일이 전쟁일 거예요",
   },
   {
-    title: "크리스마스 스피릿",
-    link: `https://m.kinolights.com/title/104135?${utm}`,
-    description:
-      "에라 모르겠다, 그저 신나게 크리스마스를 즐기고 싶은 당신!\n\n\n이번 크리스마스는 유쾌하면서 감동적인 뮤지컬 영화와 함께 보내보는 건 어떨까요?\n\n\n코미디의 대가 라이언 레이놀즈와 윌 퍼렐이 재해석한 골때리는 '스크루지 영감' 이야기가 당신의 크리스마스를 환히 밝혀줄 거예요.\n\n\n쌀쌀한 크리스마스, <크리스마스 스피릿>과 함께 텐션을 한껏 끌어올려~! 보아요! 🪩",
+    title: "코넬",
+    description: `<b>"많은 사람들이 널 사랑하고 널 걱정하고 있어. 너도 그걸 알았으면 좋겠어."</b>\n\n\n에너지 넘치고 열정적인 당신은 배울 점이 많은 연인을 원하는군요!\n<a href="https://kinolights.com/title/84520?${utm}">&lt;노멀 피플&gt;</a> 속 코넬과 잘 맞을 것으로 보여요.\n\n\n차분하고 순한 성격의 코넬은 내면이 복잡하고 생각이 많은 인물이에요.\n하지만 이를 드러내지 않고 상대방을 먼저 배려하고 이야기를 들어주곤 하죠.\n당신의 활동성을 귀여워해주고, 가끔 과하다 싶을 때에는 붙잡아줄 수도 있는 안정감 있는 애인이 되어 줄 거예요.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당신이 어떤 모습이던 묵묵히 지켜봐줄 코넬과의 관계는 분명 당신이 꿈꾸는 이상적인 연애일거예요!`,
+    description2:
+      "💔 당신과 맞지 않는 캐릭터: 피터\n당신보다 적극적인 성격의 애인은 당신을 지치게 할 거예요",
   },
   {
-    title: "클라우스",
-    link: `https://m.kinolights.com/title/78612?${utm}`,
-    description:
-      "마음만 먹으면 산타 할아버지와도 친구가 될 수 있을 것 같은 당신!\n\n\n이번 크리스마스는 산타 할아버지와 함께 선물을 배달해보는 건 어떨까요? 🎁\n\n\n산타 할아버지를 도와 착한 일을 하면 다음 크리스마스에 더 좋은 선물을 받을지도 모르잖아요!\n\n\n<클라우스>와 함께 마음 한 구석에 숨어있던 동심을 더 밝게 빛내보자고요!",
+    title: "브루스 배너",
+    description: `<b>"그러니까 헐크가, 또 다른 내가 나를 살린 거다? 좋네요... 낭만적인 얘기예요. 근데 왜 살렸답디까?"</b>\n\n\n시간 낭비를 싫어하는 당신은 장기적인 관계를 맺을 수 있는 연애를 원하는군요!\n<a href="https://kinolights.com/title/41311?${utm}">&lt;어벤져스&gt;</a> 속 브루스 배너 잘 맞을 것으로 보여요.\n\n\n헐크와는 다른 성격을 지닌 브루스 배너는 사근사근한 말투에 점잖고 지적인 인물이에요.\n      감정을 쉽게 표현하지 않아서 시니컬한 듯 보이지만,사랑하는 사람에게는 한없이 헌신적인 로맨티스트랍니다.\n당신이 좋아하는 스타일이 아닌가요? 👀\n\n\n당신을 헌신적으로 응원해줄 뚱이와의 관계는 분명 당신이 꿈꾸는 이상적인 연애일거예요!`,
+    description2:
+      "💔 당신과 맞지 않는 캐릭터: 로리\n독립적인 당신을 붙들어두고 싶어하는 로리는 당신과 맞지 않을 거예요",
   },
   {
     title: "저스트 프렌드",
@@ -87,13 +88,13 @@ const Result = () => {
         justifyContent="center"
         sx={{
           p: "100px 30px",
-          backgroundImage: `url(https://static.kinolights.com/mbti/2022-christmas/r${id}.jpg)`,
+          backgroundImage: `url(https://static.kinolights.com/mbti/202307-fate/male-r${id}.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
         }}
       >
         <div className="Result-Card">
-          <div className="Result-Title">당신의 크리스마스 영화는,</div>
+          <div className="Result-Title">당신의 운명은...</div>
           <div className="Result-Subtitle">{`${data[id].title}`}</div>
           <Divider
             variant="middle"
@@ -106,15 +107,48 @@ const Result = () => {
             className="Result-Description"
             dangerouslySetInnerHTML={{ __html: data[id].description }}
           />
+          <Divider
+            variant="middle"
+            sx={{
+              backgroundColor: "rgba(255, 255, 255, 0.3)",
+              borderBottomWidth: 4,
+              mt: 4,
+              mb: 1,
+            }}
+          />
+          <div
+            className="Result-Description"
+            dangerouslySetInnerHTML={{ __html: data[id].description2 }}
+          />
+          <Divider
+            variant="middle"
+            sx={{
+              backgroundColor: "rgba(255, 255, 255, 0.3)",
+              borderBottomWidth: 4,
+              mt: 4,
+              mb: 4,
+            }}
+          />
+          <div>이 캐릭터가 진짜 당신의 운명인가요?</div>
           <Button
             className="Result-Button"
             component="a"
-            href={data[id].link}
+            href="https://kinolights.com" // FIXME
             disableRipple
             disableFocusRipple
             sx={buttonStyle}
           >
-            지금 바로 보러가기!
+            확인하고 커피 마시기
+          </Button>
+          <Button
+            className="Result-Button"
+            component="a"
+            href="https://kinolights.com" // FIXME
+            disableRipple
+            disableFocusRipple
+            sx={buttonStyle}
+          >
+            당신의 운명의 여자 캐릭터가 궁금하다면?
           </Button>
           <div className="Result-Share">친구에게 공유하기</div>
           <IconButton
@@ -124,7 +158,11 @@ const Result = () => {
             onClick={() =>
               navigator.clipboard
                 .writeText(`https://2022christmas.kinolights.com/result/${id}`)
-                .then(() => alert("주소가 복사되었습니다.\n원하는 곳에 붙여넣기 해주세요."))
+                .then(() =>
+                  alert(
+                    "주소가 복사되었습니다.\n원하는 곳에 붙여넣기 해주세요."
+                  )
+                )
             }
           >
             <LinkIcon />
