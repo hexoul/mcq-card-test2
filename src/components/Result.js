@@ -147,6 +147,7 @@ const emphasisButtonStyle = {
 const Result = () => {
   const location = useLocation();
   const id = +location.pathname.split("/")[2];
+  const fromKakao = location.search.includes("from=kakao");
 
   return (
     <div className="Result">
@@ -164,7 +165,7 @@ const Result = () => {
       >
         <div className="Result-Card">
           <div className="Result-Title">당신의 운명은...</div>
-          <div className="Result-Subtitle">{`${data[id].title}`}</div>
+          <div className="Result-Subtitle">{data[id].title}</div>
           <Divider
             variant="middle"
             sx={{
@@ -223,7 +224,7 @@ const Result = () => {
           <Button
             className="Result-Button"
             component="a"
-            href={`https://kinolights.com/community/post/kVV3hYkBlTLepY8dQ8GC?${utm}`} // FIXME
+            href={`https://kinolights.com/community/post/yOcfjIkBp0HgxmWux5wy?${utm}`}
             disableRipple
             disableFocusRipple
             sx={emphasisButtonStyle}
