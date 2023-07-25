@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import IconButton from "@mui/material/IconButton";
 
+import { cdnPrefix } from "./constant";
 import "./Home.css";
 import Question from "./Question";
 
@@ -21,7 +22,7 @@ const Home = () => {
       <div className="Home-Title">당신의 찰떡궁합 운명의 상대는?</div>
       <div className="Home-Subtitle">영화/드라마 캐릭터 남자 편</div>
       <img
-        src="https://static.kinolights.com/mbti/202307-fate/male-start.png"
+        src={`${cdnPrefix}/male-start.png`}
         className="Home-StartImage"
         alt="start"
       />
