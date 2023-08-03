@@ -1,4 +1,5 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import IconButton from "@mui/material/IconButton";
 
@@ -7,8 +8,13 @@ import "./Home.css";
 import Question from "./Question";
 
 const Home = () => {
+  const [cookies] = useCookies(['KL_AES']);
   const [start, setStart] = useState(false);
   const doStart = useCallback(() => setStart(true), []);
+
+  useEffect(() => {
+    console.log(`??? ${cookies.KL_AES}`);
+  }, [cookies]);
 
   return start ? (
     <Question />
